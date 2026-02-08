@@ -42,7 +42,7 @@ const TypewriterText: React.FC<TypewriterProps> = ({ text, delay = 25 }) => {
 };
 
 export default function HomeScreen() {
-  const GEMINI_API_KEY = "AIzaSyCwL4GTX5G9Hxj7siHtODZUxKCSCPPueXo";
+  const GEMINI_API_KEY = "-----------";
   const ai = new GoogleGenerativeAI(GEMINI_API_KEY);
   const model = ai.getGenerativeModel({ model: "gemini-2.5-flash" });
 
