@@ -90,7 +90,7 @@ const AnimatedGradientText = ({ text = "Powered by EchoNotes" }) => {
 };
 
 export default function HomeScreen() {
-  const GEMINI_API_KEY = "AIzaSyBrk67tUu8xZvgr29jmU1UgRQ9WkVoabM0";
+  const GEMINI_API_KEY = "AIzaSyCwL4GTX5G9Hxj7siHtODZUxKCSCPPueXo";
   const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
   const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
@@ -149,6 +149,7 @@ export default function HomeScreen() {
       ]);
 
       setSummary(result.response.text());
+      setRecording(null);
     } catch (e) {
       setSummary("Error — Try again.");
     } finally {
