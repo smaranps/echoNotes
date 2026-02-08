@@ -90,7 +90,7 @@ const AnimatedGradientText = ({ text = "Powered by EchoNotes" }) => {
 };
 
 export default function HomeScreen() {
-  const GEMINI_API_KEY = "AIzaSyCwL4GTX5G9Hxj7siHtODZUxKCSCPPueXo";
+  const GEMINI_API_KEY = "--------";
   const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
   const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
